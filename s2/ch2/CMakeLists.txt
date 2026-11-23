@@ -1,0 +1,3 @@
+add_executable(s2_ch2_value_category value_category.cpp)
+add_executable(s2_ch2_ex2_1_classify ex2_1_classify.cpp)
+add_executable(s2_ch2_ex2_2_named_rref ex2_2_named_rref.cpp)
