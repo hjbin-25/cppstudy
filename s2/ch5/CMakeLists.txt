@@ -1,1 +1,3 @@
 add_executable(s2_ch5_vector_realloc vector_realloc.cpp)
+add_executable(s2_ch5_ex5_1_nothrow_check ex5_1_nothrow_check.cpp)
+add_executable(s2_ch5_ex5_2_noexcept_lie ex5_2_noexcept_lie.cpp)

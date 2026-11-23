@@ -18,7 +18,7 @@ public:
         log("copy ctor", other);
     }
 
-    MoveTracer(MoveTracer&& other) : id_(next_id_++), value_(std::move(other.value_)) {
+    MoveTracer(MoveTracer&& other) noexcept : id_(next_id_++), value_(std::move(other.value_)) {
         other.value_.clear();
         log("move ctor", other);
     }
