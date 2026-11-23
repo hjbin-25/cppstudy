@@ -1,1 +1,3 @@
 add_executable(s2_ch4_fd_move fd_move.cpp)
+add_executable(s2_ch4_ex4_1_fd_assign ex4_1_fd_assign.cpp)
+add_executable(s2_ch4_ex4_2_forget_reset ex4_2_forget_reset.cpp)
