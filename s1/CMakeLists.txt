@@ -17,5 +17,11 @@ add_executable(s1_save_score_raw ch4/save_score_raw.cpp)
 add_executable(s1_scope_timer ch4/scope_timer.cpp)
 add_executable(s1_ex4_4_scope_timer ch4/ex4_4_scope_timer.cpp)
 
+# ── ch5 ──
+add_executable(s1_unwind ch5/unwind.cpp)
+add_executable(s1_ex5_1_no_catch ch5/ex5_1_no_catch.cpp)
+add_executable(s1_ex5_2_holder ch5/ex5_2_holder.cpp)
+add_executable(s1_ex5_3_two_leak ch5/ex5_3_two_leak.cpp)
+
 # 장마다 실습 파일을 만들 때 한 줄씩 추가
 # add_executable(s1_ex2_1_no_delete ch2/ex2_1_no_delete.cpp)
