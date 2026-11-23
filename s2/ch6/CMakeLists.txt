@@ -1,1 +1,3 @@
 add_executable(s2_ch6_silent_copy silent_copy.cpp)
+add_executable(s2_ch6_ex6_1_rules ex6_1_rules.cpp)
+add_executable(s2_ch6_ex6_2_connection ex6_2_connection.cpp)
