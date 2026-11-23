@@ -33,5 +33,9 @@ add_executable(s1_ex7_2_fixed_assign ch7/ex7_2_fixed_assign.cpp)
 add_executable(s1_ex7_3_exception_wrong ch7/ex7_3_exception_wrong.cpp)
 add_executable(s1_ex7_3_exception_swap ch7/ex7_3_exception_swap.cpp)
 
+# ── ch8 ──
+add_executable(s1_int_buffer_test ch8/int_buffer_test.cpp)
+add_executable(s1_two_fixed ch8/two_fixed.cpp)
+
 # 장마다 실습 파일을 만들 때 한 줄씩 추가
 # add_executable(s1_ex2_1_no_delete ch2/ex2_1_no_delete.cpp)
