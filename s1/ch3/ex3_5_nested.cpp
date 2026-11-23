@@ -2,7 +2,7 @@
 // Created by 황정빈 on 11/16/26.
 //
 
-#include "../../common/tracer.h"
+#include "tracer.h"
 
 class Inner {
 public:

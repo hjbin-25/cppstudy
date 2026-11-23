@@ -1,2 +1,3 @@
 add_executable(s2_ch3_move_cast move_cast.cpp)
 add_executable(s2_ch3_const_move const_move.cpp)
+add_executable(s2_ch3_ex3_1_const_member ex3_1_const_member.cpp)

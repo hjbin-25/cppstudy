@@ -2,7 +2,7 @@
 // Created by 황정빈 on 11/23/26.
 //
 
-#include "../../common/move_tracer.h"
+#include "move_tracer.h"
 #include <iostream>
 #include <utility>
 
