@@ -1,0 +1,12 @@
+# IDE / 빌드 디렉터리
+.idea/
+cmake-build-*/
+*.dSYM/
+.DS_Store
+
+# s1 소스 폴더 안의 빌드 실행 파일·실행 결과물: 소스와 CMakeLists만 추적
+s1/**
+!s1/**/
+!s1/**/*.cpp
+!s1/**/*.h
+!s1/CMakeLists.txt
