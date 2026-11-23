@@ -19,3 +19,16 @@ int main() {
     std::cout << "p.header.value: " << p.header.value() << std::endl;
     std::cout << "p.body.value: " << p.body.value() << std::endl;
 }
+
+// ctor "header"
+// ctor "body"
+// before
+// copy ctor "header"
+// move ctor "body"
+// after
+// p.header.value: "header"
+// p.body.value: ""
+// dtor "body"
+// dtor "header"
+// dtor ""
+// dtor "header"
