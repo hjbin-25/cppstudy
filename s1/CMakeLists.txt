@@ -27,5 +27,11 @@ add_executable(s1_ex5_3_two_leak ch5/ex5_3_two_leak.cpp)
 add_executable(s1_shallow ch6/shallow.cpp)
 add_executable(s1_ex6_3_half_deep ch6/ex6_3_half_deep.cpp)
 
+# ── ch7 ──
+add_executable(s1_ex7_1_wrong_assign ch7/ex7_1_wrong_assign.cpp)
+add_executable(s1_ex7_2_fixed_assign ch7/ex7_2_fixed_assign.cpp)
+add_executable(s1_ex7_3_exception_wrong ch7/ex7_3_exception_wrong.cpp)
+add_executable(s1_ex7_3_exception_swap ch7/ex7_3_exception_swap.cpp)
+
 # 장마다 실습 파일을 만들 때 한 줄씩 추가
 # add_executable(s1_ex2_1_no_delete ch2/ex2_1_no_delete.cpp)
