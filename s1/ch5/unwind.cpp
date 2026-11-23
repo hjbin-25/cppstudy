@@ -4,7 +4,7 @@
 
 #include <cstdio>
 #include <stdexcept>
-#include "tracer.h"
+#include "../../common/tracer.h"
 
 void level2() {
     Tracer t2("t2");
