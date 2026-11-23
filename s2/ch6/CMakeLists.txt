@@ -1,0 +1,1 @@
+add_executable(s2_ch6_silent_copy silent_copy.cpp)
