@@ -1,0 +1,3 @@
+add_executable(s2_ch8_elision elision.cpp)
+add_executable(s2_ch8_pessimizing pessimizing.cpp)
+add_executable(s2_ch8_param_choice param_choice.cpp)
