@@ -1,3 +1,5 @@
 add_executable(s2_ch8_elision elision.cpp)
 add_executable(s2_ch8_pessimizing pessimizing.cpp)
 add_executable(s2_ch8_param_choice param_choice.cpp)
+add_executable(s2_ch8_ex8_1_one_name ex8_1_one_name.cpp)
+add_executable(s2_ch8_ex8_2_ctor_sink ex8_2_ctor_sink.cpp)
