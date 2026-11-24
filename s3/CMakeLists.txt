@@ -1,1 +1,3 @@
-add_subdirectory(ch1)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+
+add_subdirectory(ch2)
