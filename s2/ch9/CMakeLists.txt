@@ -1,1 +1,2 @@
-add_executable(s2_ch9_int_buffer int_buffer.h)
+add_executable(s2_ch9_ex9_1_before ex9_1_before.cpp)
+add_executable(s2_ch9_ex9_2_test ex9_2_test.cpp)

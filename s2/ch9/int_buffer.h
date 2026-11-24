@@ -1,5 +1,5 @@
 //
-// Created by 황정빈 on 11/23/26.
+// Created by 황정빈 on 11/24/26.
 //
 
 #pragma once
@@ -16,6 +16,9 @@ public:
         std::copy(other.data_, other.data_ + other.size_, data_);
     }
 
+    IntBuffer(IntBuffer&& other) noexcept :
+        size_(std::exchange(other.size_, 0)), data_(std::exchange(other.data_, nullptr)) {}
+
     ~IntBuffer() { delete[] data_; }
 
     friend void swap(IntBuffer& a, IntBuffer& b) noexcept {
@@ -24,9 +27,8 @@ public:
         swap(a.data_, b.data_);
     }
 
-    IntBuffer& operator=(const IntBuffer& other) {
-        IntBuffer temp(other);
-        swap(*this, temp);
+    IntBuffer& operator=(IntBuffer other) noexcept {
+        swap(*this, other);
         return *this;
     }
 
@@ -37,14 +39,14 @@ public:
     int& operator[](const std::size_t index) { return data_[index]; }
 
     int at(const std::size_t index) const {
-        if (index < 0 || index >= size_)
+        if (index >= size_)
             throw std::out_of_range("data 범위를 벗어났습니다.");
 
         return data_[index];
     }
 
     int& at(const std::size_t index) {
-        if (index < 0 || index >= size_)
+        if (index >= size_)
             throw std::out_of_range("data 범위를 벗어났습니다.");
 
         return data_[index];
