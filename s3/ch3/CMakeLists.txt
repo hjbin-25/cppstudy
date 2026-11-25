@@ -1,3 +1,5 @@
 add_executable(s3_ch3_unique_basics unique_basics.cpp)
 add_executable(s3_ch3_return_kinds return_kinds.cpp)
 add_executable(s3_ch3_release_leak release_leak.cpp)
+add_executable(s3_ch3_ex3_1_moved_from ex3_1_moved_from.cpp)
+add_executable(s3_ch3_ex3_2_test ex3_2_test.cpp)
