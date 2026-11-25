@@ -1,0 +1,2 @@
+add_executable(s3_ch4_fd_unique fd_unique.cpp)
+add_executable(s3_ch4_deleter_size deleter_size.cpp)
