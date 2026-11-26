@@ -7,6 +7,9 @@
 #include <memory>
 #include <iostream>
 #include <string>
+#include <cstddef>
+#include <utility>
+#include <string_view>
 #include <vector>
 
 namespace v2 {
@@ -58,14 +61,14 @@ namespace v2 {
 
         std::size_t broadcast(std::string_view msg) {
             std::size_t sent = 0;
-            std::erase_if(members_, [&](std::weak_ptr<Connection> c) {
+            std::erase_if(members_, [&](const std::weak_ptr<Connection>& c) {
                 if (std::shared_ptr<Connection> s = c.lock()) {
                     std::cout << "  -> " << s->peer() << ": " << msg << "\n";
                     ++sent;
                     return false;
                 }
 
-                return c.expired();
+                return true;
             });
             return sent;
         }
@@ -82,4 +85,4 @@ namespace v2 {
     private:
         std::vector<std::weak_ptr<Connection>> members_;
     };
-};
+}

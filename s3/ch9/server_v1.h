@@ -8,6 +8,8 @@
 #include <memory>
 #include <string>
 #include <iostream>
+#include <cstddef>
+#include <utility>
 #include <string_view>
 
 namespace v1 {
@@ -74,4 +76,4 @@ namespace v1 {
     private:
         std::vector<Connection*> members_;
     };
-};
+}
