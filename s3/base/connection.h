@@ -7,6 +7,9 @@
 #include <string>
 #include <utility>
 
+// Fd 값 소유
+// 빌리는 것 없음
+// Server가 지움
 class Connection {
 public:
     Connection(const char* path, std::string peer) : fd_(path), peer_(std::move(peer)) {}

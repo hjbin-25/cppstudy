@@ -1,3 +1,4 @@
 add_executable(s3_ch2_pointer_copy pointer_copy.cpp)
 add_executable(s3_ch2_label_leak label_leak.cpp)
-add_executable(s3_ch2_ex2_2_label ex2_2_label.cpp)
+add_executable(s3_ch2_ex2_2_label ex2_2_label.cpp
+        ../ch9/test_v1.cpp)
