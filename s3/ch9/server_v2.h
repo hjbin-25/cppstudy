@@ -58,20 +58,25 @@ namespace v2 {
 
         std::size_t broadcast(std::string_view msg) {
             std::size_t sent = 0;
-            for (const auto& c : members_) {
+            std::erase_if(members_, [&](std::weak_ptr<Connection> c) {
                 if (std::shared_ptr<Connection> s = c.lock()) {
                     std::cout << "  -> " << s->peer() << ": " << msg << "\n";
                     ++sent;
+                    return false;
                 }
-            }
-            std::erase_if(members_, [](std::weak_ptr<Connection> c) {
+
                 return c.expired();
             });
             return sent;
         }
 
         std::size_t size() const {
-            return members_.size();
+            std::size_t exist = 0;
+            for (const auto& c : members_) {
+                if (!c.expired())
+                    ++exist;
+            }
+            return exist;
         }
 
     private:

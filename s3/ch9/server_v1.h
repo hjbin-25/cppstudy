@@ -25,7 +25,7 @@ namespace v1 {
             return *connections_.back();
         }
 
-        Connection* find(int fd) const {
+        const Connection* find(int fd) const {
             for (const auto& c : connections_) {
                 if (c->fd() == fd)
                     return c.get();
