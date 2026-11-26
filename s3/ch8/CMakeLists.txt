@@ -1,0 +1,3 @@
+add_executable(s3_ch8_shared_from_this shared_from_this.cpp)
+add_executable(s3_ch8_bad_this bad_this.cpp)
+add_executable(s3_ch8_misuse misuse.cpp)
