@@ -15,7 +15,7 @@
 namespace v1 {
     // Connection 소유
     // 빌리지 않음
-    // 호출자가 지워야됨
+    // 부른 곳에서 지워야됨
     class Server {
     public:
         Server() = default;
@@ -52,7 +52,7 @@ namespace v1 {
 
     // 소유하지 않음
     // Connection 빌림
-    // Server가 disconnect 전에 leave로 Connection을 해제 시켜줘야함
+    // Server가 disconnect 전에 leave 호출하기
     class ChatRoom {
     public:
         void join(Connection& c) {
