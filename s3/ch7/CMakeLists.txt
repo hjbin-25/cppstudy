@@ -1,0 +1,2 @@
+add_executable(s3_ch7_cycle_leak cycle_leak.cpp)
+add_executable(s3_ch7_ex7_1_cycle_fixed ex7_1_cycle_fixed.cpp)
