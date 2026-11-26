@@ -1,3 +1,4 @@
 add_executable(s3_ch6_shared_basics shared_basics.cpp)
 add_executable(s3_ch6_double_owner double_owner.cpp)
 add_executable(s3_ch6_alloc_count alloc_count.cpp)
+add_executable(s3_ch6_ex6_1_fix_owner ex6_1_fix_owner.cpp)
